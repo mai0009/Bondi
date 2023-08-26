@@ -1,0 +1,247 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--green-color);
+}
+
+.search-icon {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+    padding: 5px 10px 5px 10px;
+    padding-top: 5px;
+}
+
+.navbar .btn {
+    color: var(--yellow-color);
+
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    background-color: var(--red-color);
+}
+
+.navbar-toggler {
+    color: white;
+    border: 1px solid var(--green-color);
+    padding: 2px 4px 1px;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler[aria-expanded=false] {
+    border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 52px);
+}
+
+.feat-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder {
+    min-height: 200px;
+}
+
+.icon-holder .number {
+    color: var(--section-color);
+    font-size: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder .icon {
+    z-index: 5;
+    color: var(--green-color);
+    font-size: 4rem;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feat-cards h3 {
+    color: var(--yellow-color);
+    font-size: 1.5rem;
+}
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+
+.our-work .box .int-box {
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box .int-box::before {
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #00000066;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box .int-box:hover::before {
+    transform: translateX(0);
+}
+
+.stuff .stuff-p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stuff .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stuff img {
+    position: relative;
+    bottom: -15px;
+}
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .row .box {
+    background-color: white;
+}
+
+.team .row .box h2 {
+    background-color: var(--green-color);
+}
+
+.project {
+    background-color: var(--dark-color);
+}
+
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    font-size: 1.5rem;
+}
+
+.subscribe input::placeholder {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.copyright span:first-child {
+    color: var(--green-color);
+}
+
+.copyright span:last-child {
+    color: var(--yellow-color);
+}
+
+.footer .links .title,
+.footer .about .title {
+    color: white;
+}
+
+.facebook {
+    background-color: #1877f2;
+    color: white;
+}
+
+.twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.linkedin {
+    background-color: #0a66c2;
+    color: white;
+}
+
+.youtube {
+    background-color: #ff0000;
+    color: white;
+}
